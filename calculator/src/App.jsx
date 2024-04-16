@@ -19,7 +19,6 @@ function App() {
     catch{
       setResult(Error)
     }
-    
   }
 
   return (

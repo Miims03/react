@@ -20,7 +20,8 @@
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 37px;
+  /* padding: 37px; */
+  margin-top: 0.9rem;
   user-select: none;
 }
 .logo-icon{
@@ -31,28 +32,31 @@
   align-items: center;
   font-size: 1.5rem;
   border-radius: 50%;
-  /* background-color: #000f20; */
+  color: rgb(255, 255, 255);
+  background-color: #001529;
 }
 aside{
   height: 100vh;
 }
 
 .bigMenu{
-  /* height: 88vh; */
-  /* margin-top: 1rem; */
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .themeBtn{
   position: absolute;
   bottom: 20px;
-  left: 65px;
+  left: 9px;
+}
+.toggle{
+  margin-left: 1rem;
 }
 .themeBtn button{
-  width: 4rem;
-  height: 3rem;
+  width: 3rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,3 +64,19 @@ aside{
 .themeBtn button svg{
   font-size: 2rem;
 }
+.content{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #base{
+  height: 85vh;
+  width: 85vw;
+  background-color: green;
+  position: absolute;
+  z-index: 1;
+  top: 7rem;
+  left: 15rem;
+} */
