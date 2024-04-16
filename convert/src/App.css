@@ -1,0 +1,16 @@
+#App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+#App div button {
+  font-size: 25px;
+  height: 4rem;
+  width: 15rem;
+}
+#App div button span svg {
+  height: 2rem;
+  width: 2rem;
+}/*# sourceMappingURL=App.css.map */
