@@ -1,0 +1,82 @@
+@mixin Dflex()
+    display: flex
+    justify-content: center
+    align-items: center
+
+.Carousel
+    height: 80vh
+    @include Dflex()
+    flex-direction: column
+    justify-content: start
+    gap: 1rem
+    h1
+        font-size: 70px
+    h3
+        font-size: 40px
+    .allSlider
+        width: 90rem
+        @include Dflex()
+        justify-content: center
+        gap: 2rem
+        button
+            height: 6rem
+            width: 6rem
+            border-radius: 50%
+            border: #f6f6f6 solid 2px
+            background: #ffffff00
+            font-size: 45px
+            color: #f6f6f6
+            cursor: pointer
+            transition: 0.5s
+        .Left:hover
+            transform: translateX(-5%) 
+        .Right:hover
+            transform: translateX(5%) 
+        .slider
+            @include Dflex()
+            justify-content: start
+            min-height: 40rem
+            width: 65rem
+            gap: 2rem
+            overflow: hidden
+            .items
+                padding: 2rem 0 2rem 0
+                border: #f6f6f6 solid 2px
+                border-radius: 20px
+                min-width: 20rem
+                @include Dflex()
+                justify-content: start
+                flex-direction: column
+                gap: 2rem
+                cursor: pointer
+                transition: 0.5s
+                h3
+                h4
+                    font-size: 40px
+                img
+                    width: 50%
+                    filter: drop-shadow(0 0 10px #abf2ffc5)
+                    animation: rot 5s linear infinite
+            .items:hover
+                transform: translateY(-5%)
+
+@keyframes rot
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg) 
+// @keyframes slideL
+//     0%
+//         transform: translateX(0%)
+//     100%
+//         transform: translateX(-110%)
+// @keyframes slideR
+//     0%
+//         transform: translateX(0%)
+//     100%
+//         transform: translateX(110%)
+
+// .SlideLeft
+//         animation: slideL 0.5s linear
+// .SlideRight
+//         animation: slideR 0.5s linear

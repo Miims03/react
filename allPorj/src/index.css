@@ -31,12 +31,26 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  border-radius: 50%;
-  color: rgb(255, 255, 255);
-  background-color: #001529;
+  /* border-radius: 50%; */
+}
+.ban-icon{
+  width: 7rem;
+  /* height: 3rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  /* border-radius: 50%; */
 }
 aside{
   height: 100vh;
+  
+}
+aside div {
+  /* background-color: #b5b5b5; */
+}
+aside div ul{
+  /* background-color: aqua; */
 }
 
 .bigMenu{

@@ -10,6 +10,8 @@ const { Header, Sider, Footer, Content } = Layout
 import Home from './Home'
 import Calculator from './Calculator'
 import Weather from './Weather'
+import Convertor from './Convertor'
+
 
 function Sidebar() {
 
@@ -26,13 +28,14 @@ function Sidebar() {
 
     return (
         <Layout>
-            <Sider
+            <Sider 
+                // style={darkTheme ? {background : '#27355d'} : {background: '#b5b5b5'}}
                 trigger={null}
                 collapsible
                 collapsed={collaps}
-                theme={darkTheme ? 'dark' : 'light'}
+                theme={darkTheme ? 'dark' : 'light'}    
                 className='sidebar'>
-                <Logo />
+                <Logo collaps={collaps} />
                 <MenuList darkTheme={darkTheme} />
                 <ThemeBtn darkTheme={darkTheme} toggleTheme={toggleTheme} />
             </Sider>
@@ -62,6 +65,8 @@ function Sidebar() {
                             <Route path='/' element={<Home />} />
                             <Route path='/calculator' element={<Calculator />} />
                             <Route path='/weather' element={<Weather />} />
+                            <Route path='/convertor' element={<Convertor />} />
+
                         </Routes>
                     </div>
                 </Content>
