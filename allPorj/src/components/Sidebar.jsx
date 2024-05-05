@@ -11,6 +11,7 @@ import Home from './Home'
 import Calculator from './Calculator'
 import Weather from './Weather'
 import Convertor from './Convertor'
+import DragDrop from './DragDrop'
 
 
 function Sidebar() {
@@ -66,6 +67,7 @@ function Sidebar() {
                             <Route path='/calculator' element={<Calculator />} />
                             <Route path='/weather' element={<Weather />} />
                             <Route path='/convertor' element={<Convertor />} />
+                            <Route path='/dragdrop' element={<DragDrop />} />
                         </Routes>
                     </div>
                 </Content>

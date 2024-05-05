@@ -5,7 +5,8 @@ import {
     CalculatorOutlined,
     SunOutlined,
     MoneyCollectOutlined,
-    BarsOutlined
+    BarsOutlined,
+    DragOutlined
 } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 
@@ -35,9 +36,7 @@ const MenuList = ({ darkTheme }) => {
 
             {/* Optional */}
 
-            <Menu.Item key='calculator'
-                icon={<CalculatorOutlined />
-                }>
+            <Menu.Item key='calculator'icon={<CalculatorOutlined />}>
                 <Link to='/calculator'>Calculator</Link>
             </Menu.Item>
             <Menu.Item key='weather' icon={<SunOutlined />}>
@@ -45,6 +44,9 @@ const MenuList = ({ darkTheme }) => {
             </Menu.Item>
             <Menu.Item key='convertor' icon={<MoneyCollectOutlined />}>
                 <Link to='/convertor'>Convertor</Link>
+            </Menu.Item>
+            <Menu.Item key='dragdrop' icon={<DragOutlined />}>
+                <Link to='/dragdrop'>Drag & Drop</Link>
             </Menu.Item>
         </Menu>
     )
