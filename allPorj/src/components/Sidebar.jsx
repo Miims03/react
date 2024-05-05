@@ -66,7 +66,6 @@ function Sidebar() {
                             <Route path='/calculator' element={<Calculator />} />
                             <Route path='/weather' element={<Weather />} />
                             <Route path='/convertor' element={<Convertor />} />
-
                         </Routes>
                     </div>
                 </Content>

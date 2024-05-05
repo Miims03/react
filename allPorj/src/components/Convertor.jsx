@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+  import React, {useEffect, useState} from 'react';
 import Axios from 'axios'
 import './Convertor.css'
 import {Button, FormControl, Paper, Select, TextField} from "@material-ui/core";
@@ -32,7 +32,7 @@ function Convertor() {
               <h3>Convertisseur de devises</h3>
               <form className='idk' onSubmit={convert}>
                 <div>
-                  <TextField variant="outlined" value={text1 || ""} onChange={(e)=>settext1(e.target.value)} autocomplete='off'/>
+                  <TextField variant="outlined" color='red' value={text1 || ""} onChange={(e)=>settext1(e.target.value)} autocomplete='off'/>
                   <FormControl className='dropdown' variant ="outlined" onChange={(e)=>setvalue1(e.target.value)}>
                     <Select native>
                       {Object.keys(country).map((value,index)=>(
@@ -41,7 +41,7 @@ function Convertor() {
                   </FormControl>
                 </div>
                 <div>
-                <TextField variant="outlined" value={text2 || ""}/>
+                <TextField variant="outlined" color="warning" value={text2 || ""}/>
                   <FormControl className='dropdown' variant ="outlined" onChange={(e)=>setvalue2(e.target.value)}>
                     <Select native>
                       {Object.keys(country2).map((value,index)=>(
