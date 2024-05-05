@@ -1,14 +1,16 @@
 .paper{
-    width: 400px;
-    height: 300px;
-    background: linear-gradient(#00204c,#ffffff);
+    width: 25rem;
+    height: 20rem;
     margin: auto;
-    /* margin-top: 100px; */
     padding-top: 20px;
     text-align: center;
     text-transform: uppercase;
     color: black;
     text-shadow: 0px 1px 5px white;
+}
+.idk{
+    /* background: rgb(31, 34, 133); */
+    color: #ffffff;
 }
 .paper h3{
     color:#ffffff
@@ -20,5 +22,6 @@
     /* width: 130px; */
 }
 .buttonn{
+    color: #ffffff;
     margin-top: 20px !important;
 }

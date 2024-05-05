@@ -42,8 +42,8 @@ function Calculator() {
                 <button onClick={handleClick} name='2'>2</button>
                 <button onClick={handleClick} name='3'>3</button>
                 <button className='light' onClick={handleClick} name='+'>+</button>
-                <button onClick={handleClick}>0</button>
-                <button onClick={handleClick}>.</button>
+                <button onClick={handleClick} name='0'>0</button>
+                <button onClick={handleClick} name='.'>.</button>
                 <button className='light' onClick={calculate} id='result'>=</button>
             </div>
         </div>
